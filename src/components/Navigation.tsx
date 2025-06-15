@@ -13,15 +13,15 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="bg-white shadow p-4 flex justify-between items-center">
+    <nav className="bg-white shadow p-3 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
       <div className='flex gap-6 '>
-        <Link href="/" className="font-bold text-xlw">RemoteCraft</Link>
-        <div className="flex space-x-6 font-semibold ">
+        <Link href="/" className="font-bold text-lg">RemoteCraft</Link>
+        <div className="flex space-x-6  ">
         {navLinks.map(link => (
           <Link
             key={link.href}
             href={link.href}
-            className={`hover:text-primary ${router.pathname === link.href ? ' font-bold' : 'text-black'}`}
+            className={`hover:text-primary ${router.pathname === link.href ? ' font-semibold' : 'text-black'}`}
           >
             {link.label}
           </Link>
