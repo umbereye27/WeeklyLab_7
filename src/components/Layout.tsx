@@ -17,7 +17,9 @@ export default function RootLayout({
     <html lang="en" className={`${workSans.variable}`}>
       <body className={`${workSans.className} min-h-screen bg-grayBg text-black`}>
         <Navigation />
-        <main className="pt-18 mx-32">{children}</main>
+        <main className="pt-16 sm:pt-18 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 mx-auto max-w-7xl">
+          {children}
+        </main>
       </body>
     </html>
   )

@@ -3,7 +3,7 @@ import { Job } from "@/types";
 import Image from "next/image";
 
 interface JobCardProps {
-  job: Job; // Changed from jobs: Job[]
+  job: Job;
 }
 
 export default function JobCard({ job }: JobCardProps) {
